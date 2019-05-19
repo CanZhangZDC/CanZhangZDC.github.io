@@ -228,7 +228,7 @@
 
     
 
-    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br />Startseite</a>
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
 
   </li>
         
@@ -245,7 +245,7 @@
 
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archiv</a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archivi</a>
 
   </li>
 
@@ -281,6 +281,204 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/19/5-19总结/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/05/19/5-19总结/" class="post-title-link" itemprop="http://yoursite.com/index.html">5-19学习总结</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Scritto il</span>
+              
+
+              
+                
+              
+
+              <time title="Post creato: 2019-05-19 10:12:32 / Post modificato: 23:53:52" itemprop="dateCreated datePublished" datetime="2019-05-19T10:12:32+08:00">2019-05-19</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>1.今日所做：</p>
+<p>a.七大经典排序算法（by c）</p>
+<p>归并算法</p>
+<p>b.CSS文本字体</p>
+<p>c.CSS链接</p>
+<p>2.学习参考：</p>
+<p>a.归并算法</p>
+<p><a href="https://www.cnblogs.com/chengxiao/p/6194356.html" target="_blank" rel="noopener">https://www.cnblogs.com/chengxiao/p/6194356.html</a></p>
+<p>b.CSS文本and字体</p>
+<p>文本:<a href="https://www.runoob.com/css/css-text.html" target="_blank" rel="noopener">https://www.runoob.com/css/css-text.html</a></p>
+<p>字体<br><a href="https://www.runoob.com/css/css-font.html" target="_blank" rel="noopener">https://www.runoob.com/css/css-font.html</a></p>
+<p>c.CSS链接                    </p>
+<p><a href="https://www.runoob.com/css/css-link.html" target="_blank" rel="noopener">https://www.runoob.com/css/css-link.html</a></p>
+<p>3.感悟：</p>
+<p>归并算法</p>
+<p>先用类似于完全二叉树的结构和算法将一个整数组，进行n/2（8-4后4-2）然后将各组中的两个元素<br>进行排序后重新合并，合并时进行排序，最后组成两组较大（记作A和B数组）的已经排序的数组，然<br>后直接将一个数组放到另一个数组后面组合，（ A数组第一个元素记作i， B数组第一个元素记作j），<br>讲i与j进行比较，将较小的元素放到新数组temp中，若较小元素为i则i++，为j则j++；然后再用i与j比较<br>小的元素放到temp中，重复以上操作若A数组或B数组有一个数组已经全都填充到temp中，则直接将另一个数组剩余元素填充到temp中。</p>
+<p>归并排序是稳定排序，它也是一种十分高效的排序，能利用完全二叉树特性的排序一般性能都不会太差。</p>
+<p>文本颜色</p>
+<p>十六进制值 - 如: ＃FF0000<br>一个RGB值 - 如: RGB(255,0,0)<br>颜色的名称 - 如: red</p>
+<p>文本对齐方式</p>
+<p>h1 {text-align:center;}</p>
+<p>p.date {text-align:right;}</p>
+<p>p.main {text-align:justify;}每一行被展开为宽度相等，左，右外边距是对齐（如杂志和报纸）</p>
+<p>文本转换</p>
+<p>p.uppercase {text-transform:uppercase;}全字母大写</p>
+<p>p.lowercase {text-transform:lowercase;}全字母小写</p>
+<p>p.capitalize {text-transform:capitalize;}各单词首字母大写</p>
+<p>文本缩进</p>
+<p>p {text-indent:50px;}</p>
+<p>c.CSS链接</p>
+<p>链接的样式可以是各种文字属性</p>
+<p>特别的链接状态</p>
+<p>a:link - 正常，未访问过的链接<br>a:link {color:#000000;}</p>
+<p>a:visited - 用户已访问过的链接<br>a:visited {color:#00FF00;}</p>
+<p>a:hover - 当用户鼠标放在链接上时<br>a:hover {color:#FF00FF;}</p>
+<p>a:active - 链接被点击的那一刻<br>a:active {color:#0000FF;}</p>
+<p>当设置为若干链路状态的样式，也有一些顺序规则：</p>
+<p>a:hover 必须跟在 a:link 和 a:visited后面</p>
+<p>a:active 必须跟在 a:hover后面</p>
+<p>文本修饰</p>
+<p>text-decoration 属性主要用于删除链接中的下划线：</p>
+<p>a:link {text-decoration:none;}</p>
+<p>a:visited {text-decoration:none;}</p>
+<p>a:hover {text-decoration:underline;}</p>
+<p>a:active {text-decoration:underline;}</p>
+<p>注意:hover必须在:link和 a:visited之后定义才有效.</p>
+<p>注意:active必须在hover之后定义是有效的.</p>
+<p>背景颜色<br>a:link {background-color:#B2FF99;}</p>
+<p>a:visited {background-color:#FFFF85;}</p>
+<p>a:hover {background-color:#FF704D;}</p>
+<p>a:active {background-color:#FF704D;}</p>
+<p>4.近期进度：</p>
+<p>《机器学习与应用》简单学习</p>
+<p>前端中CSS的初步学习</p>
+<p>七大经典算法(by C)</p>
+<p>五大常用算法 <a href="https://www.cnblogs.com/bulingpan/p/6416362.html" target="_blank" rel="noopener">https://www.cnblogs.com/bulingpan/p/6416362.html</a></p>
+<p>HTML5  CSS</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+       
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
     
       
 
@@ -335,14 +533,14 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Scritto il</span>
               
 
               
                 
               
 
-              <time title="Post created: 2019-05-18 10:12:32 / Updated at: 23:37:08" itemprop="dateCreated datePublished" datetime="2019-05-18T10:12:32+08:00">2019-05-18</time>
+              <time title="Post creato: 2019-05-18 10:12:32 / Post modificato: 23:37:08" itemprop="dateCreated datePublished" datetime="2019-05-18T10:12:32+08:00">2019-05-18</time>
             
 
             
@@ -506,14 +704,14 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Scritto il</span>
               
 
               
                 
               
 
-              <time title="Post created: 2019-05-17 10:12:32 / Updated at: 23:29:08" itemprop="dateCreated datePublished" datetime="2019-05-17T10:12:32+08:00">2019-05-17</time>
+              <time title="Post creato: 2019-05-17 10:12:32 / Post modificato: 23:29:08" itemprop="dateCreated datePublished" datetime="2019-05-17T10:12:32+08:00">2019-05-17</time>
             
 
             
@@ -669,14 +867,14 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Scritto il</span>
               
 
               
                 
               
 
-              <time title="Post created: 2019-05-16 10:12:32" itemprop="dateCreated datePublished" datetime="2019-05-16T10:12:32+08:00">2019-05-16</time>
+              <time title="Post creato: 2019-05-16 10:12:32" itemprop="dateCreated datePublished" datetime="2019-05-16T10:12:32+08:00">2019-05-16</time>
             
 
             
@@ -693,7 +891,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Updated at: 2019-05-17 00:09:31" itemprop="dateModified" datetime="2019-05-17T00:09:31+08:00">2019-05-17</time>
+                <time title="Post modificato: 2019-05-17 00:09:31" itemprop="dateModified" datetime="2019-05-17T00:09:31+08:00">2019-05-17</time>
               
             
           </span>
@@ -852,14 +1050,14 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Scritto il</span>
               
 
               
                 
               
 
-              <time title="Post created: 2019-05-15 10:12:32" itemprop="dateCreated datePublished" datetime="2019-05-15T10:12:32+08:00">2019-05-15</time>
+              <time title="Post creato: 2019-05-15 10:12:32" itemprop="dateCreated datePublished" datetime="2019-05-15T10:12:32+08:00">2019-05-15</time>
             
 
             
@@ -876,7 +1074,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Updated at: 2019-05-16 00:27:57" itemprop="dateModified" datetime="2019-05-16T00:27:57+08:00">2019-05-16</time>
+                <time title="Post modificato: 2019-05-16 00:27:57" itemprop="dateModified" datetime="2019-05-16T00:27:57+08:00">2019-05-16</time>
               
             
           </span>
@@ -1025,14 +1223,14 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Scritto il</span>
               
 
               
                 
               
 
-              <time title="Post created: 2019-05-14 10:12:32 / Updated at: 23:42:23" itemprop="dateCreated datePublished" datetime="2019-05-14T10:12:32+08:00">2019-05-14</time>
+              <time title="Post creato: 2019-05-14 10:12:32 / Post modificato: 23:42:23" itemprop="dateCreated datePublished" datetime="2019-05-14T10:12:32+08:00">2019-05-14</time>
             
 
             
@@ -1182,14 +1380,14 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Scritto il</span>
               
 
               
                 
               
 
-              <time title="Post created: 2019-05-12 10:12:32" itemprop="dateCreated datePublished" datetime="2019-05-12T10:12:32+08:00">2019-05-12</time>
+              <time title="Post creato: 2019-05-12 10:12:32" itemprop="dateCreated datePublished" datetime="2019-05-12T10:12:32+08:00">2019-05-12</time>
             
 
             
@@ -1206,7 +1404,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Updated at: 2019-05-13 00:26:34" itemprop="dateModified" datetime="2019-05-13T00:26:34+08:00">2019-05-13</time>
+                <time title="Post modificato: 2019-05-13 00:26:34" itemprop="dateModified" datetime="2019-05-13T00:26:34+08:00">2019-05-13</time>
               
             
           </span>
@@ -1348,14 +1546,14 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Scritto il</span>
               
 
               
                 
               
 
-              <time title="Post created: 2019-05-11 10:12:32 / Updated at: 15:14:20" itemprop="dateCreated datePublished" datetime="2019-05-11T10:12:32+08:00">2019-05-11</time>
+              <time title="Post creato: 2019-05-11 10:12:32 / Post modificato: 15:14:20" itemprop="dateCreated datePublished" datetime="2019-05-11T10:12:32+08:00">2019-05-11</time>
             
 
             
@@ -1499,14 +1697,14 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Scritto il</span>
               
 
               
                 
               
 
-              <time title="Post created: 2019-04-13 10:12:32 / Updated at: 14:24:24" itemprop="dateCreated datePublished" datetime="2019-04-13T10:12:32+08:00">2019-04-13</time>
+              <time title="Post creato: 2019-04-13 10:12:32 / Post modificato: 14:24:24" itemprop="dateCreated datePublished" datetime="2019-04-13T10:12:32+08:00">2019-04-13</time>
             
 
             
@@ -1644,14 +1842,14 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Scritto il</span>
               
 
               
                 
               
 
-              <time title="Post created: 2019-01-04 14:43:10" itemprop="dateCreated datePublished" datetime="2019-01-04T14:43:10+08:00">2019-01-04</time>
+              <time title="Post creato: 2019-01-04 14:43:10" itemprop="dateCreated datePublished" datetime="2019-01-04T14:43:10+08:00">2019-01-04</time>
             
 
             
@@ -1668,7 +1866,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Updated at: 2019-01-05 13:00:54" itemprop="dateModified" datetime="2019-01-05T13:00:54+08:00">2019-01-05</time>
+                <time title="Post modificato: 2019-01-05 13:00:54" itemprop="dateModified" datetime="2019-01-05T13:00:54+08:00">2019-01-05</time>
               
             
           </span>
@@ -1713,150 +1911,6 @@
 <p>2.<a href="https://paste.ubuntu.com/p/5rGh55mX5f/" target="_blank" rel="noopener">https://paste.ubuntu.com/p/5rGh55mX5f/</a></p>
 <p>3.<a href="https://paste.ubuntu.com/p/3w9wM8C49p/" target="_blank" rel="noopener">https://paste.ubuntu.com/p/3w9wM8C49p/</a></p>
 <p>5.下周进度：<br>继续了解linux，如果还有时间就对其他方面也进行了解</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-       
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/15/第二次周报/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2018/12/15/第二次周报/" class="post-title-link" itemprop="http://yoursite.com/index.html">第二次周报</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2018-12-15 10:29:15" itemprop="dateCreated datePublished" datetime="2018-12-15T10:29:15+08:00">2018-12-15</time>
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>1.本周学习方向：<br>人工智能发展的方向与所面临的挑战</p>
-<p>2.学习参考：<br>微信公众号：OFweek人工智能，混沌巡洋舰</p>
-<p>3.总结：<br>挑战：1.一些领域存在超前发展，发展不均衡，不可相互扶持共同发展；<br>2.数据孤岛化和碎片化问题明显；<br>3.前沿科研与产业实践尚未紧密衔接。<br>方向：目前来看，我国体量较大的四巨头，在AI方面均有投入，其中以百度最为积极，直接将人工智能定位为公司发展的下一个主要方向；而阿里则将AI应用到线下零售门店，无人超市就是试水之作；腾讯则将AI和居民生活联系起来，如人脸识别技术和医学影像等；华为则将AI技术应用到手机业务中，2017年10月份已经发布收款AI芯片的手机。这四家公司代表了我国国内人工智能行业的发展方向。<br>总结：人工智能始终被一面墙堵着，发展受限，人们的认识往往只有智能手机，未曾想过是全方位的智能，解放人类。</p>
-<p>4.LeetCode：<br><a href="https://paste.ubuntu.com/p/szrKDzrfBq/" target="_blank" rel="noopener">https://paste.ubuntu.com/p/szrKDzrfBq/</a></p>
-<p><a href="https://paste.ubuntu.com/p/5g72j9z9wn/" target="_blank" rel="noopener">https://paste.ubuntu.com/p/5g72j9z9wn/</a></p>
-<p><a href="https://paste.ubuntu.com/p/tj3r7HDktn/" target="_blank" rel="noopener">https://paste.ubuntu.com/p/tj3r7HDktn/</a></p>
-<p>5.下周进度：<br>最好能明确自己人工智能方面的发展方向，深入一点进行学习，不能再在表层做了解了。</p>
 
           
         
@@ -1945,8 +1999,8 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">11</span>
-                    <span class="site-state-item-name">Artikel</span>
+                    <span class="site-state-item-count">12</span>
+                    <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
               
@@ -1965,7 +2019,7 @@
                       
                     
                     <span class="site-state-item-count">2</span>
-                    <span class="site-state-item-name">Tags</span>
+                    <span class="site-state-item-name">tags</span>
                   
                 </div>
               
@@ -2015,7 +2069,7 @@
 </div>
 
 
-  <div class="powered-by">Erstellt mit  <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.7.1</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.7.1</div>
 
 
 
@@ -2023,7 +2077,7 @@
 
 
 
-  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v6.5.0</div>
+  <div class="theme-info">Tema – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v6.5.0</div>
 
 
 
