@@ -228,7 +228,7 @@
 
     
 
-    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br />Startseite</a>
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
 
   </li>
         
@@ -245,7 +245,7 @@
 
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archiv</a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archivi</a>
 
   </li>
 
@@ -281,6 +281,198 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/26/5-26总结/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/05/26/5-26总结/" class="post-title-link" itemprop="http://yoursite.com/page/2/index.html">5-26学习总结</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Scritto il</span>
+              
+
+              
+                
+              
+
+              <time title="Post creato: 2019-05-26 10:12:32" itemprop="dateCreated datePublished" datetime="2019-05-26T10:12:32+08:00">2019-05-26</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Post modificato: 2019-05-27 01:02:11" itemprop="dateModified" datetime="2019-05-27T01:02:11+08:00">2019-05-27</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>1.今日所做：</p>
+<p>a.性可分与线性不可分</p>
+<p>b.机器学习SVM算法</p>
+<p>2.学习参考：</p>
+<p><a href="https://www.cnblogs.com/lgdblog/p/6858832.html" target="_blank" rel="noopener">https://www.cnblogs.com/lgdblog/p/6858832.html</a></p>
+<p>3.感悟</p>
+<p>SVM（支持向量机）</p>
+<p>分类和回归问题都会涉及到SVM算法，SVM就是做很多异常复杂的数据转换工作，接着根据预定义的标签或者输出，进一步计算出如何分离用户需要的数据。</p>
+<p>某些对数据的操作是建立在数据是线性可分上进行的，对于某些线性不可分的数据，SVM的核技巧（核方法）把数据转换到更高的维度上，在高维空间上数据可能就会变得线性可分。</p>
+<p>核技巧（核方法）：</p>
+<p>判断数据是不是线性可分的？</p>
+<p>最简单的情况是数据向量是一维二维或者三维的，我们可以把图像画出来，直观上就能看出来。</p>
+<p>当唯独变得很高时，检查凸包是否相交。（凸包：在某维度曲线上刚好包住所有数据的凸闭合曲线）</p>
+<p>以二维的情况为例，如果我们的数据训练集有两类：M+和M-，当我们画出两个类的凸包，如果两者不重叠，那么两者线性可分，反之则不是线性可分。而且可以用电脑判断凸包M+的边和凸包M-的边是否相交，这样就可以跳过人工绘图的繁琐过程。 </p>
+<p>4.近期进度：</p>
+<p>SVM的核算法</p>
+<p><a href="https://www.cnblogs.com/ooon/p/5750643.html" target="_blank" rel="noopener">https://www.cnblogs.com/ooon/p/5750643.html</a></p>
+<p>如何高效的找到一组数据的凸包？</p>
+<p>如何高效的判断两个凸包是否重合？</p>
+<p><a href="https://www.cnblogs.com/lgdblog/p/6858832.html" target="_blank" rel="noopener">https://www.cnblogs.com/lgdblog/p/6858832.html</a></p>
+<p>简单说，他的建议就是用quickhull算法来找到数据的凸包，sweepline算法判断凸包边缘是否有相交，两个步骤的复杂度都是O(nlogn)。</p>
+<p>Svm算法原理及实现</p>
+<p><a href="https://blog.csdn.net/d__760/article/details/80387432" target="_blank" rel="noopener">https://blog.csdn.net/d__760/article/details/80387432</a></p>
+<p>数据挖掘领域十大经典算法之—SVM算法（带例子）</p>
+<p><a href="https://blog.csdn.net/fuqiuai/article/details/79483057" target="_blank" rel="noopener">https://blog.csdn.net/fuqiuai/article/details/79483057</a></p>
+<p>多标签分类的算法</p>
+<p><a href="https://www.jianshu.com/p/c4ad84a82494" target="_blank" rel="noopener">https://www.jianshu.com/p/c4ad84a82494</a></p>
+<p>机器学习中的强化学习</p>
+<p><a href="https://baijiahao.baidu.com/s?id=1592919045537427909&amp;wfr=spider&amp;for=pc" target="_blank" rel="noopener">https://baijiahao.baidu.com/s?id=1592919045537427909&amp;wfr=spider&amp;for=pc</a></p>
+<p>深度神经网络的发展现状</p>
+<p><a href="https://wenku.baidu.com/view/4b36390b26d3240c844769eae009581b6bd9bde3.html" target="_blank" rel="noopener">https://wenku.baidu.com/view/4b36390b26d3240c844769eae009581b6bd9bde3.html</a></p>
+<p>人脸识别的活物判断</p>
+<p>《机器学习与应用》简单学习</p>
+<p>前端中CSS的初步学习</p>
+<p>七大经典算法(by C)</p>
+<p>五大常用算法 <a href="https://www.cnblogs.com/bulingpan/p/6416362.html" target="_blank" rel="noopener">https://www.cnblogs.com/bulingpan/p/6416362.html</a></p>
+<p>HTML5  CSS3</p>
+<p>5.权威资料</p>
+<p>《deep learning on keras》</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+       
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
     
       
 
@@ -335,14 +527,14 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Scritto il</span>
               
 
               
                 
               
 
-              <time title="Post created: 2019-05-25 10:12:32" itemprop="dateCreated datePublished" datetime="2019-05-25T10:12:32+08:00">2019-05-25</time>
+              <time title="Post creato: 2019-05-25 10:12:32" itemprop="dateCreated datePublished" datetime="2019-05-25T10:12:32+08:00">2019-05-25</time>
             
 
             
@@ -359,7 +551,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Updated at: 2019-05-26 00:43:16" itemprop="dateModified" datetime="2019-05-26T00:43:16+08:00">2019-05-26</time>
+                <time title="Post modificato: 2019-05-26 00:43:16" itemprop="dateModified" datetime="2019-05-26T00:43:16+08:00">2019-05-26</time>
               
             
           </span>
@@ -518,14 +710,14 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Scritto il</span>
               
 
               
                 
               
 
-              <time title="Post created: 2019-05-24 10:12:32" itemprop="dateCreated datePublished" datetime="2019-05-24T10:12:32+08:00">2019-05-24</time>
+              <time title="Post creato: 2019-05-24 10:12:32" itemprop="dateCreated datePublished" datetime="2019-05-24T10:12:32+08:00">2019-05-24</time>
             
 
             
@@ -542,7 +734,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Updated at: 2019-05-26 00:42:56" itemprop="dateModified" datetime="2019-05-26T00:42:56+08:00">2019-05-26</time>
+                <time title="Post modificato: 2019-05-26 00:42:56" itemprop="dateModified" datetime="2019-05-26T00:42:56+08:00">2019-05-26</time>
               
             
           </span>
@@ -714,14 +906,14 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Scritto il</span>
               
 
               
                 
               
 
-              <time title="Post created: 2019-05-23 10:12:32" itemprop="dateCreated datePublished" datetime="2019-05-23T10:12:32+08:00">2019-05-23</time>
+              <time title="Post creato: 2019-05-23 10:12:32" itemprop="dateCreated datePublished" datetime="2019-05-23T10:12:32+08:00">2019-05-23</time>
             
 
             
@@ -738,7 +930,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Updated at: 2019-05-24 01:12:24" itemprop="dateModified" datetime="2019-05-24T01:12:24+08:00">2019-05-24</time>
+                <time title="Post modificato: 2019-05-24 01:12:24" itemprop="dateModified" datetime="2019-05-24T01:12:24+08:00">2019-05-24</time>
               
             
           </span>
@@ -883,14 +1075,14 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Scritto il</span>
               
 
               
                 
               
 
-              <time title="Post created: 2019-05-22 10:12:32 / Updated at: 23:49:40" itemprop="dateCreated datePublished" datetime="2019-05-22T10:12:32+08:00">2019-05-22</time>
+              <time title="Post creato: 2019-05-22 10:12:32 / Post modificato: 23:49:40" itemprop="dateCreated datePublished" datetime="2019-05-22T10:12:32+08:00">2019-05-22</time>
             
 
             
@@ -1016,186 +1208,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/21/5-20总结/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/05/21/5-20总结/" class="post-title-link" itemprop="http://yoursite.com/page/2/index.html">5-21学习总结</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2019-05-21 10:12:32 / Updated at: 20:16:01" itemprop="dateCreated datePublished" datetime="2019-05-21T10:12:32+08:00">2019-05-21</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>1.今日所做：</p>
-<p>a.CSS3 边框</p>
-<p>b.CSS圆角</p>
-<p>2.学习参考：</p>
-<p>CSS3 边框and新边框属性</p>
-<p>a.<a href="https://www.runoob.com/css3/css3-borders.html" target="_blank" rel="noopener">https://www.runoob.com/css3/css3-borders.html</a></p>
-<p>b.CSS圆角</p>
-<p><a href="https://www.runoob.com/css3/css3-border-radius.html" target="_blank" rel="noopener">https://www.runoob.com/css3/css3-border-radius.html</a></p>
-<p>3.感悟：</p>
-<p>CSS 圆角</p>
-<p>div</p>
-<p>{</p>
-<p>border:2px solid;</p>
-<p>border-radius:25px;</p>
-<p>}</p>
-<p>CSS3 border-radius 指定每个圆角</p>
-<p>若在border-radius属性中只指定一个值，那么将生成4个圆角。另外规则如下：<br>四个值: 第一个值为左上角，第二个值为右上角，第三个值为右下角，第四个值为左下角。</p>
-<p>三个值: 第一个值为左上角, 第二个值为右上角和左下角，第三个值为右下角。</p>
-<p>两个值: 第一个值为左上角与右下角，第二个值为右上角与左下角。</p>
-<p>CSS3 盒阴影</p>
-<p>div</p>
-<p>{</p>
-<p>box-shadow: 10px 10px 5px #888888;</p>
-<p>}</p>
-<p>CSS圆角制作器</p>
-<p>（<a href="https://www.runoob.com/css-radius）" target="_blank" rel="noopener">https://www.runoob.com/css-radius）</a></p>
-<p>CSS3 边界图片</p>
-<p>div</p>
-<p>{</p>
-<p>border-image:url(border.png) 30 30 round;</p>
-<p>-webkit-border-image:url(border.png) 30 30 round; /<em> Safari 5 and older </em>/</p>
-<p>-o-border-image:url(border.png) 30 30 round; /<em> Opera </em>/</p>
-<p>}</p>
-<p>4.近期进度：</p>
-<p>《机器学习与应用》简单学习</p>
-<p>前端中CSS的初步学习</p>
-<p>七大经典算法(by C)</p>
-<p>五大常用算法 <a href="https://www.cnblogs.com/bulingpan/p/6416362.html" target="_blank" rel="noopener">https://www.cnblogs.com/bulingpan/p/6416362.html</a></p>
-<p>HTML5  CSS</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-       
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/21/5-21总结/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1234,14 +1246,14 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Scritto il</span>
               
 
               
                 
               
 
-              <time title="Post created: 2019-05-21 10:12:32 / Updated at: 20:47:34" itemprop="dateCreated datePublished" datetime="2019-05-21T10:12:32+08:00">2019-05-21</time>
+              <time title="Post creato: 2019-05-21 10:12:32 / Post modificato: 20:47:34" itemprop="dateCreated datePublished" datetime="2019-05-21T10:12:32+08:00">2019-05-21</time>
             
 
             
@@ -1391,6 +1403,186 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/21/5-20总结/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/05/21/5-20总结/" class="post-title-link" itemprop="http://yoursite.com/page/2/index.html">5-21学习总结</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Scritto il</span>
+              
+
+              
+                
+              
+
+              <time title="Post creato: 2019-05-21 10:12:32 / Post modificato: 20:16:01" itemprop="dateCreated datePublished" datetime="2019-05-21T10:12:32+08:00">2019-05-21</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>1.今日所做：</p>
+<p>a.CSS3 边框</p>
+<p>b.CSS圆角</p>
+<p>2.学习参考：</p>
+<p>CSS3 边框and新边框属性</p>
+<p>a.<a href="https://www.runoob.com/css3/css3-borders.html" target="_blank" rel="noopener">https://www.runoob.com/css3/css3-borders.html</a></p>
+<p>b.CSS圆角</p>
+<p><a href="https://www.runoob.com/css3/css3-border-radius.html" target="_blank" rel="noopener">https://www.runoob.com/css3/css3-border-radius.html</a></p>
+<p>3.感悟：</p>
+<p>CSS 圆角</p>
+<p>div</p>
+<p>{</p>
+<p>border:2px solid;</p>
+<p>border-radius:25px;</p>
+<p>}</p>
+<p>CSS3 border-radius 指定每个圆角</p>
+<p>若在border-radius属性中只指定一个值，那么将生成4个圆角。另外规则如下：<br>四个值: 第一个值为左上角，第二个值为右上角，第三个值为右下角，第四个值为左下角。</p>
+<p>三个值: 第一个值为左上角, 第二个值为右上角和左下角，第三个值为右下角。</p>
+<p>两个值: 第一个值为左上角与右下角，第二个值为右上角与左下角。</p>
+<p>CSS3 盒阴影</p>
+<p>div</p>
+<p>{</p>
+<p>box-shadow: 10px 10px 5px #888888;</p>
+<p>}</p>
+<p>CSS圆角制作器</p>
+<p>（<a href="https://www.runoob.com/css-radius）" target="_blank" rel="noopener">https://www.runoob.com/css-radius）</a></p>
+<p>CSS3 边界图片</p>
+<p>div</p>
+<p>{</p>
+<p>border-image:url(border.png) 30 30 round;</p>
+<p>-webkit-border-image:url(border.png) 30 30 round; /<em> Safari 5 and older </em>/</p>
+<p>-o-border-image:url(border.png) 30 30 round; /<em> Opera </em>/</p>
+<p>}</p>
+<p>4.近期进度：</p>
+<p>《机器学习与应用》简单学习</p>
+<p>前端中CSS的初步学习</p>
+<p>七大经典算法(by C)</p>
+<p>五大常用算法 <a href="https://www.cnblogs.com/bulingpan/p/6416362.html" target="_blank" rel="noopener">https://www.cnblogs.com/bulingpan/p/6416362.html</a></p>
+<p>HTML5  CSS</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+       
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/19/5-19总结/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1429,14 +1621,14 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Scritto il</span>
               
 
               
                 
               
 
-              <time title="Post created: 2019-05-19 10:12:32" itemprop="dateCreated datePublished" datetime="2019-05-19T10:12:32+08:00">2019-05-19</time>
+              <time title="Post creato: 2019-05-19 10:12:32" itemprop="dateCreated datePublished" datetime="2019-05-19T10:12:32+08:00">2019-05-19</time>
             
 
             
@@ -1453,7 +1645,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Updated at: 2019-05-21 18:02:56" itemprop="dateModified" datetime="2019-05-21T18:02:56+08:00">2019-05-21</time>
+                <time title="Post modificato: 2019-05-21 18:02:56" itemprop="dateModified" datetime="2019-05-21T18:02:56+08:00">2019-05-21</time>
               
             
           </span>
@@ -1639,14 +1831,14 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Scritto il</span>
               
 
               
                 
               
 
-              <time title="Post created: 2019-05-18 10:12:32 / Updated at: 23:37:08" itemprop="dateCreated datePublished" datetime="2019-05-18T10:12:32+08:00">2019-05-18</time>
+              <time title="Post creato: 2019-05-18 10:12:32 / Post modificato: 23:37:08" itemprop="dateCreated datePublished" datetime="2019-05-18T10:12:32+08:00">2019-05-18</time>
             
 
             
@@ -1810,14 +2002,14 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Scritto il</span>
               
 
               
                 
               
 
-              <time title="Post created: 2019-05-17 10:12:32 / Updated at: 23:29:08" itemprop="dateCreated datePublished" datetime="2019-05-17T10:12:32+08:00">2019-05-17</time>
+              <time title="Post creato: 2019-05-17 10:12:32 / Post modificato: 23:29:08" itemprop="dateCreated datePublished" datetime="2019-05-17T10:12:32+08:00">2019-05-17</time>
             
 
             
@@ -1920,189 +2112,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/16/5-16总结/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/05/16/5-16总结/" class="post-title-link" itemprop="http://yoursite.com/page/2/index.html">5-16学习总结</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2019-05-16 10:12:32" itemprop="dateCreated datePublished" datetime="2019-05-16T10:12:32+08:00">2019-05-16</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Updated at: 2019-05-17 00:09:31" itemprop="dateModified" datetime="2019-05-17T00:09:31+08:00">2019-05-17</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>1.今日所做：</p>
-<p>a.《机器学习》</p>
-<p>b.选择排序</p>
-<p>直接选择排序</p>
-<p>c.条件运算符</p>
-<p>d.CSS</p>
-<p>&amp;id和class选择器</p>
-<p>&amp;样式表的分类，创建与使用</p>
-<p>2.学习参考：</p>
-<p>a.《机器学习与应用》</p>
-<p>b.七大排序算法(byC)<a href="https://www.cnblogs.com/maluning/p/7944809.html" target="_blank" rel="noopener">https://www.cnblogs.com/maluning/p/7944809.html</a></p>
-<p>c.CSS:<a href="https://www.runoob.com/css" target="_blank" rel="noopener">https://www.runoob.com/css</a></p>
-<p>3.感悟：</p>
-<p>a.直接选择排序</p>
-<p>先通过外层循环设置出一个标记元素key，再通过内层元素从左第一个元素与其后元素比较找出比其小的元素，找到该元素后将两个元素的位置互换，然后再用该较小元素与较大元素位置之后的元素进行比较，如果找到比起更小的元素则再将该两个元素互换，以此类推直到判断到最后一个元素为止，这样做的目的是将最小的元素放在最前的位置，然后重新由外层循环引入新的比较，找到第二小的元素放在第二的位置。</p>
-<p>b.条件运算符是C语言中唯一的三目运算符，就是说他有三个运算对象。条件运算符的形式是“？：”由他构成的表达式称为条件表达式。形式为：<br>表达式1？表达式2：表达式3<br>运算功能是。先计算表达式1的值，若值为非0，则计算表达式2的值，并将表达式2的值作为整个条件表达式的结果；若表达式1的值为0，则计算表达式3的值，并将表达式3的值作为整个条件表达式的结果。<br>比如有以下条件表达式 （a&gt;b）?a+b：a-b<br>a=8 b=4时，计算a+b=12 ，所以表达式结果为12<br>a=4 b=8时，计算a-b=-4，所以表达式结果为-4</p>
-<p>c.<br>id选择器以”#”来定义(ID属性不要以数字开头)</p>
-<p>class 选择器有别于id选择器，class可以在多个元素中使用。class 选择器在HTML中以cla ss属性表示, 在 CSS 中，类选择器以一个点”.”号显示(类名的第一个字符不能使用数字),class选择器可以指定特定的HTML元素使用class，也可使“文本中全部使用”。</p>
-<p>当只有单个文件需要特殊的格式的时候就选择用内部样式表，有多个文件都需要用特殊的格式的时候就可以用外部样式表使其方便快捷。</p>
-<p>存放外部样式表的文件不能包含html的标签。</p>
-<p>多重样式优先级</p>
-<p>内联样式）Inline style &gt; （内部样式）Internal style sheet &gt;（外部样式）External style sheet &gt; 浏览器默认样式</p>
-<p>4.近期进度：</p>
-<p>《机器学习与应用》简单学习</p>
-<p>前端中CSS的初步学习</p>
-<p>七大经典算法(by C)</p>
-<p>五大常用算法 <a href="https://www.cnblogs.com/bulingpan/p/6416362.html" target="_blank" rel="noopener">https://www.cnblogs.com/bulingpan/p/6416362.html</a></p>
-<p>HTML5_CSS入门（内部样式、外部样式、内联样式、选择器）</p>
-<p><a href="https://blog.csdn.net/itszt888/article/details/76778790" target="_blank" rel="noopener">https://blog.csdn.net/itszt888/article/details/76778790</a></p>
-<p><a href="https://www.cnblogs.com/Iwillknow/p/3691492.html" target="_blank" rel="noopener">https://www.cnblogs.com/Iwillknow/p/3691492.html</a></p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-       
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2150,8 +2159,8 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">28</span>
-                    <span class="site-state-item-name">Artikel</span>
+                    <span class="site-state-item-count">29</span>
+                    <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
               
@@ -2170,7 +2179,7 @@
                       
                     
                     <span class="site-state-item-count">2</span>
-                    <span class="site-state-item-name">Tags</span>
+                    <span class="site-state-item-name">tags</span>
                   
                 </div>
               
@@ -2220,7 +2229,7 @@
 </div>
 
 
-  <div class="powered-by">Erstellt mit  <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.7.1</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.7.1</div>
 
 
 
@@ -2228,7 +2237,7 @@
 
 
 
-  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v6.5.0</div>
+  <div class="theme-info">Tema – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v6.5.0</div>
 
 
 
