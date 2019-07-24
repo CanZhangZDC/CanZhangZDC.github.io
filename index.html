@@ -297,7 +297,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/21/7-23学习总结学习总结学习总结/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/24/7-24学习总结学习总结学习总结/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="John Doe">
@@ -317,7 +317,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/07/21/7-23学习总结学习总结学习总结/" class="post-title-link" itemprop="http://yoursite.com/index.html">7-23学习总结</a>
+                <a href="/2019/07/24/7-24学习总结学习总结学习总结/" class="post-title-link" itemprop="http://yoursite.com/index.html">7-24学习总结</a>
               
             
           </h1>
@@ -342,24 +342,12 @@
                 
               
 
-              <time title="Post created: 2019-07-21 10:12:32" itemprop="dateCreated datePublished" datetime="2019-07-21T10:12:32+08:00">2019-07-21</time>
+              <time title="Post created: 2019-07-24 10:12:32 / Updated at: 17:41:11" itemprop="dateCreated datePublished" datetime="2019-07-24T10:12:32+08:00">2019-07-24</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Updated at: 2019-07-24 00:05:10" itemprop="dateModified" datetime="2019-07-24T00:05:10+08:00">2019-07-24</time>
               
             
           </span>
@@ -396,23 +384,18 @@
           
                <font color="#DC143C" size="5" face="黑体">一.近期所学：</font>
 
-<p> 有关缓冲区的清除</p>
+<p>《机器学习与应用》第三章</p>
    <font color="#DC143C" size="5" face="黑体">二.学习参考：</font>
 
-
-<p>可以达到清除缓冲区的函数</p>
-<p>fflush函数：<br>fflush函数的函数原型int fflush(FILE* stream)等：<a href="https://blog.csdn.net/derkampf/article/details/68927563" target="_blank" rel="noopener">https://blog.csdn.net/derkampf/article/details/68927563</a></p>
-<p>setbuf函数getchar函数：<a href="https://blog.csdn.net/guanyasu/article/details/53153705" target="_blank" rel="noopener">https://blog.csdn.net/guanyasu/article/details/53153705</a></p>
+<p>《机器学习与应用》</p>
    <font color="#DC143C" size="5" face="黑体">三.感悟&amp;总结：</font>
 
-<p>fflush函数：<br>C中清除内存缓冲区的函数是fflushI()，清除输入缓冲区用fflush(stdin)&lt;stdin用于标准输入，stdout用于标准输出，分别用于清空标准输入或输出缓冲区&gt;；fflush不是标准库函数，在linux下的gcc&lt;gcc是GNU编译器套件:<a href="https://baike.baidu.com/item/gcc/17570?fr=aladdin&gt;上不支持" target="_blank" rel="noopener">https://baike.baidu.com/item/gcc/17570?fr=aladdin&gt;上不支持</a>;</p>
-<p>setbuf（stdin，null）：该函数可以使stdin输入流由默认缓冲区转为无缓冲区，这样在scanf输入完毕后，缓冲区的东西就被清楚了。</p>
-<p>getchar：使用getchar不断获取缓冲区内的内容，直到缓冲区内空为止，较为实用，</p>
-<p>实例：<br>while ((c = getchar()) != EOF &amp;&amp; c != ‘\n’);//不停地使用getchar()获取缓冲中字符，直到获取的c是“\n”或文件结尾符EOF为止</p>
+<p>按照样本数据是否带有标签值，可以将机器学习算法分为有监督学习与无监督学习。按照标签值的类型，可以将有监督学习算法进一步细分为分类问题与回归问题 按照求解的方法，可以将有监督学习算法分为生成模型与判别模型。</p>
+<p>垃圾邮件分类、手写文字识别、人脸识别、语音识别等<br>都是有监督学习</p>
+<p>无监督学习的典型代表是聚类、表示学习和数据降维。<br>另一类典型算法是表示学习，它从样本中自动学习出有用的特征，用于分类和聚类等目的，数据降维也是无监督学习算法。</p>
    <font color="#DC143C" size="5" face="黑体">四.近期进度：</font>
 
 <p>计时器与倒计时器的实现与完善</p>
-<p>清空缓冲区</p>
 <p>图形库</p>
 <p>support vector machine如何运用</p>
 <p><a href="https://m.sohu.com/a/161668827_99960663/?pvid=000115_3w_a" target="_blank" rel="noopener">https://m.sohu.com/a/161668827_99960663/?pvid=000115_3w_a</a></p>
@@ -619,6 +602,212 @@
 
 4.把子问题的解局部最优解合成原来解问题的一个解。
 </code></pre><p>贪心策略再某个问题中证明成立后，就是一种高效的算法。</p>
+   <font color="#DC143C" size="5" face="黑体">四.近期进度：</font>
+
+<p>计时器与倒计时器的实现与完善</p>
+<p>清空缓冲区</p>
+<p>图形库</p>
+<p>support vector machine如何运用</p>
+<p><a href="https://m.sohu.com/a/161668827_99960663/?pvid=000115_3w_a" target="_blank" rel="noopener">https://m.sohu.com/a/161668827_99960663/?pvid=000115_3w_a</a></p>
+<p>kernel trick技术</p>
+<p><a href="https://blog.csdn.net/qq_36695866/article/details/53541808" target="_blank" rel="noopener">https://blog.csdn.net/qq_36695866/article/details/53541808</a></p>
+<p><a href="https://blog.csdn.net/krais_wk/article/details/80992153" target="_blank" rel="noopener">https://blog.csdn.net/krais_wk/article/details/80992153</a></p>
+<hr>
+<p>SVM的核算法</p>
+<p><a href="https://www.cnblogs.com/ooon/p/5750643.html" target="_blank" rel="noopener">https://www.cnblogs.com/ooon/p/5750643.html</a></p>
+<p>如何高效的找到一组数据的凸包？</p>
+<p><a href="https://www.cnblogs.com/Booble/archive/2011/03/10/1980089.html" target="_blank" rel="noopener">https://www.cnblogs.com/Booble/archive/2011/03/10/1980089.html</a></p>
+<p><a href="https://blog.csdn.net/slowlight93/article/details/41311123" target="_blank" rel="noopener">https://blog.csdn.net/slowlight93/article/details/41311123</a></p>
+<p>如何高效的判断两个凸包是否重合？</p>
+<p><a href="https://dsa.cs.tsinghua.edu.cn/~deng/cg/project/2000f/2000f-e/sweep.htm" target="_blank" rel="noopener">https://dsa.cs.tsinghua.edu.cn/~deng/cg/project/2000f/2000f-e/sweep.htm</a></p>
+<p><a href="https://blog.csdn.net/lirewriter/article/details/77585395" target="_blank" rel="noopener">https://blog.csdn.net/lirewriter/article/details/77585395</a></p>
+<p>用quickhull算法来找到数据的凸包，sweepline算法判断凸包边缘是否有相交，两个步骤的复杂度都是O(nlogn)。</p>
+<p>Svm算法原理及实现</p>
+<p><a href="https://blog.csdn.net/d__760/article/details/80387432" target="_blank" rel="noopener">https://blog.csdn.net/d__760/article/details/80387432</a></p>
+<p>数据挖掘领域十大经典算法之—SVM算法（带例子）</p>
+<p><a href="https://blog.csdn.net/fuqiuai/article/details/79483057" target="_blank" rel="noopener">https://blog.csdn.net/fuqiuai/article/details/79483057</a></p>
+<p>多标签分类的算法</p>
+<p><a href="https://www.jianshu.com/p/c4ad84a82494" target="_blank" rel="noopener">https://www.jianshu.com/p/c4ad84a82494</a></p>
+<p>机器学习中的强化学习</p>
+<p><a href="https://baijiahao.baidu.com/s?id=1592919045537427909&amp;wfr=spider&amp;for=pc" target="_blank" rel="noopener">https://baijiahao.baidu.com/s?id=1592919045537427909&amp;wfr=spider&amp;for=pc</a></p>
+<p>深度神经网络的发展现状</p>
+<p><a href="https://wenku.baidu.com/view/4b36390b26d3240c844769eae009581b6bd9bde3.html" target="_blank" rel="noopener">https://wenku.baidu.com/view/4b36390b26d3240c844769eae009581b6bd9bde3.html</a></p>
+<p>人脸识别的活物判断</p>
+<p>《机器学习与应用》简单学习</p>
+<p>前端中CSS的初步学习</p>
+<p>七大经典算法(by C)</p>
+<p>五大常用算法 <a href="https://www.cnblogs.com/bulingpan/p/6416362.html" target="_blank" rel="noopener">https://www.cnblogs.com/bulingpan/p/6416362.html</a></p>
+<p>JS  </p>
+<p>5.权威资料</p>
+<p>《deep learning on keras》</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+       
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/21/7-23学习总结学习总结学习总结/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/07/21/7-23学习总结学习总结学习总结/" class="post-title-link" itemprop="http://yoursite.com/index.html">7-23学习总结</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2019-07-21 10:12:32" itemprop="dateCreated datePublished" datetime="2019-07-21T10:12:32+08:00">2019-07-21</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Updated at: 2019-07-24 00:05:10" itemprop="dateModified" datetime="2019-07-24T00:05:10+08:00">2019-07-24</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+               <font color="#DC143C" size="5" face="黑体">一.近期所学：</font>
+
+<p> 有关缓冲区的清除</p>
+   <font color="#DC143C" size="5" face="黑体">二.学习参考：</font>
+
+
+<p>可以达到清除缓冲区的函数</p>
+<p>fflush函数：<br>fflush函数的函数原型int fflush(FILE* stream)等：<a href="https://blog.csdn.net/derkampf/article/details/68927563" target="_blank" rel="noopener">https://blog.csdn.net/derkampf/article/details/68927563</a></p>
+<p>setbuf函数getchar函数：<a href="https://blog.csdn.net/guanyasu/article/details/53153705" target="_blank" rel="noopener">https://blog.csdn.net/guanyasu/article/details/53153705</a></p>
+   <font color="#DC143C" size="5" face="黑体">三.感悟&amp;总结：</font>
+
+<p>fflush函数：<br>C中清除内存缓冲区的函数是fflushI()，清除输入缓冲区用fflush(stdin)&lt;stdin用于标准输入，stdout用于标准输出，分别用于清空标准输入或输出缓冲区&gt;；fflush不是标准库函数，在linux下的gcc&lt;gcc是GNU编译器套件:<a href="https://baike.baidu.com/item/gcc/17570?fr=aladdin&gt;上不支持" target="_blank" rel="noopener">https://baike.baidu.com/item/gcc/17570?fr=aladdin&gt;上不支持</a>;</p>
+<p>setbuf（stdin，null）：该函数可以使stdin输入流由默认缓冲区转为无缓冲区，这样在scanf输入完毕后，缓冲区的东西就被清楚了。</p>
+<p>getchar：使用getchar不断获取缓冲区内的内容，直到缓冲区内空为止，较为实用，</p>
+<p>实例：<br>while ((c = getchar()) != EOF &amp;&amp; c != ‘\n’);//不停地使用getchar()获取缓冲中字符，直到获取的c是“\n”或文件结尾符EOF为止</p>
    <font color="#DC143C" size="5" face="黑体">四.近期进度：</font>
 
 <p>计时器与倒计时器的实现与完善</p>
@@ -2130,214 +2319,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/06/6-5与6-6总结/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/06/06/6-5与6-6总结/" class="post-title-link" itemprop="http://yoursite.com/index.html">6-5与6-6学习总结</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2019-06-06 10:12:32" itemprop="dateCreated datePublished" datetime="2019-06-06T10:12:32+08:00">2019-06-06</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Updated at: 2019-06-07 01:47:09" itemprop="dateModified" datetime="2019-06-07T01:47:09+08:00">2019-06-07</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-               <font color="#DC143C" size="5" face="黑体">一.今日所做：</font>
-
-<p>C中的时间函数</p>
-<p>C 库函数 - time()</p>
-   <font color="#DC143C" size="5" face="黑体">二.学习参考：</font>
-
-<p><a href="https://www.cnblogs.com/iloverain/p/5661270.html" target="_blank" rel="noopener">https://www.cnblogs.com/iloverain/p/5661270.html</a></p>
-<p><a href="https://www.runoob.com/cprogramming/c-function-time.html" target="_blank" rel="noopener">https://www.runoob.com/cprogramming/c-function-time.html</a></p>
-   <font color="#DC143C" size="5" face="黑体">三.感悟&amp;总结：</font>
-
-<p>Sleep函数：<br>1.添加时加入头文件#inclulde&lt;stdio.h&gt;;</p>
-<p>2.unsigned Sleep(unsigned seconds);</p>
-<p>3.括号里面的单位是毫秒，例：sleep（3000）即停留3s；</p>
-<p>time():</p>
-<p>time_t time(time_t *seconds) 返回自纪元 Epoch（1970-01-01 00:00:00 UTC）起经过的时间，以秒为单位。如果 seconds 不为空，则返回值也存储在变量 seconds 中。</p>
-<p>声明：time_t time(time_t *t)</p>
-<p>seconds – 这是指向类型为 time_t 的对象的指针，用来存储 seconds 的值。</p>
-<p>例：</p>
-<p>time_t seconds;</p>
-<p>seconds = time(NULL);</p>
-   <font color="#DC143C" size="5" face="黑体">四.近期进度：</font>
-
-<p>support vector machine如何运用</p>
-<p><a href="https://m.sohu.com/a/161668827_99960663/?pvid=000115_3w_a" target="_blank" rel="noopener">https://m.sohu.com/a/161668827_99960663/?pvid=000115_3w_a</a></p>
-<p>kernel trick技术</p>
-<p><a href="https://blog.csdn.net/qq_36695866/article/details/53541808" target="_blank" rel="noopener">https://blog.csdn.net/qq_36695866/article/details/53541808</a></p>
-<p><a href="https://blog.csdn.net/krais_wk/article/details/80992153" target="_blank" rel="noopener">https://blog.csdn.net/krais_wk/article/details/80992153</a></p>
-<hr>
-<p>SVM的核算法</p>
-<p><a href="https://www.cnblogs.com/ooon/p/5750643.html" target="_blank" rel="noopener">https://www.cnblogs.com/ooon/p/5750643.html</a></p>
-<p>如何高效的找到一组数据的凸包？</p>
-<p><a href="https://www.cnblogs.com/Booble/archive/2011/03/10/1980089.html" target="_blank" rel="noopener">https://www.cnblogs.com/Booble/archive/2011/03/10/1980089.html</a></p>
-<p><a href="https://blog.csdn.net/slowlight93/article/details/41311123" target="_blank" rel="noopener">https://blog.csdn.net/slowlight93/article/details/41311123</a></p>
-<p>如何高效的判断两个凸包是否重合？</p>
-<p><a href="https://dsa.cs.tsinghua.edu.cn/~deng/cg/project/2000f/2000f-e/sweep.htm" target="_blank" rel="noopener">https://dsa.cs.tsinghua.edu.cn/~deng/cg/project/2000f/2000f-e/sweep.htm</a></p>
-<p><a href="https://blog.csdn.net/lirewriter/article/details/77585395" target="_blank" rel="noopener">https://blog.csdn.net/lirewriter/article/details/77585395</a></p>
-<p>用quickhull算法来找到数据的凸包，sweepline算法判断凸包边缘是否有相交，两个步骤的复杂度都是O(nlogn)。</p>
-<p>Svm算法原理及实现</p>
-<p><a href="https://blog.csdn.net/d__760/article/details/80387432" target="_blank" rel="noopener">https://blog.csdn.net/d__760/article/details/80387432</a></p>
-<p>数据挖掘领域十大经典算法之—SVM算法（带例子）</p>
-<p><a href="https://blog.csdn.net/fuqiuai/article/details/79483057" target="_blank" rel="noopener">https://blog.csdn.net/fuqiuai/article/details/79483057</a></p>
-<p>多标签分类的算法</p>
-<p><a href="https://www.jianshu.com/p/c4ad84a82494" target="_blank" rel="noopener">https://www.jianshu.com/p/c4ad84a82494</a></p>
-<p>机器学习中的强化学习</p>
-<p><a href="https://baijiahao.baidu.com/s?id=1592919045537427909&amp;wfr=spider&amp;for=pc" target="_blank" rel="noopener">https://baijiahao.baidu.com/s?id=1592919045537427909&amp;wfr=spider&amp;for=pc</a></p>
-<p>深度神经网络的发展现状</p>
-<p><a href="https://wenku.baidu.com/view/4b36390b26d3240c844769eae009581b6bd9bde3.html" target="_blank" rel="noopener">https://wenku.baidu.com/view/4b36390b26d3240c844769eae009581b6bd9bde3.html</a></p>
-<p>人脸识别的活物判断</p>
-<p>《机器学习与应用》简单学习</p>
-<p>前端中CSS的初步学习</p>
-<p>七大经典算法(by C)</p>
-<p>五大常用算法 <a href="https://www.cnblogs.com/bulingpan/p/6416362.html" target="_blank" rel="noopener">https://www.cnblogs.com/bulingpan/p/6416362.html</a></p>
-<p>HTML5  CSS3</p>
-<p>5.权威资料</p>
-<p>《deep learning on keras》</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-       
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2385,7 +2366,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">38</span>
+                    <span class="site-state-item-count">39</span>
                     <span class="site-state-item-name">Artikel</span>
                   </a>
                 </div>
